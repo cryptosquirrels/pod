@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: epod
+  name: epod
+spec:
+  containers:
+  - image: nginx
+    name: epod
+    envFrom:
+    - configMapRef:
+        name: keyvalconfigmap
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+~                                                               
+~                                                               
+~                                                               
+~                                                               
+~                                                               
+~                                                               
+~                                                               
+~                                                               
+~                                                               
+~                                                               
+~                                                               

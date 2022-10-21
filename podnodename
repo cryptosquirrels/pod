@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    Name: nginxnode
+  name: nginxmc
+spec:
+  containers:
+  - image: nginx
+    name: nginxmc
+  nodeName: minikube
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+~  
